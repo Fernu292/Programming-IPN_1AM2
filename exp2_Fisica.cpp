@@ -10,7 +10,7 @@ int main(){
 
 
     for(int i=20;i<40;i++){
-        long double angle = i/180;
+        long double angle = i*PI/180;
         T2 = 1.54177665/sin(angle);
 
         cout<<"El angulo es: "<<i<<" en rad: "<<angle<<endl;
