@@ -36,5 +36,5 @@ void imprimir(int vector[]){
             printf(", ");
         }
     }
-    printf(")");
+    printf(")\n");
 }
