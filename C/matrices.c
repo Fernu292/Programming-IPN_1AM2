@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 int main(){
 
     int width, height;
@@ -27,10 +28,12 @@ int main(){
 
 
     for(int i=0;i<width;i++){
-        printf("\t");
+        printf("\t ");
         for(int j=0;j<height;j++){
             printf("%.f ", array2d[i][j]);
         }
         printf("\n");
     }
 }
+
+
