@@ -52,6 +52,18 @@ class Matrix {
             cout<<endl;
         }
 
+        void getSecondDiagonal(){
+            cout<<"The secondary diagonal elements are: "<<endl;
+            for(int i=0;i<this->height;i++){
+                for(int j=this->weigth-1;j>=0;j--){
+                    if( (i+j) == (this->height-1) ){
+                        cout<<this->matriz[i][j]<<" ";
+                    }
+                }
+            }
+            cout<<endl;
+        }
+
         void printMatrix(){
             cout<<"Your matrix is: "<<endl;
             for(auto vect1D : matriz){
@@ -70,6 +82,7 @@ int main(){
     m->getDimensions();
     m->setMatrixData();
     m->getPrincipalDiagnonal();
+    m->getSecondDiagonal();
     m->printMatrix();
     return 0;
 }
