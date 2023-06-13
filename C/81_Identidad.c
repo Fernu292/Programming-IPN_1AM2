@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void imprimir_Identidad(int n){
-    double **identidad = (double **)malloc(sizeof(double)*n);
+    double **identidad = (double **)malloc(sizeof(double *)*n);
 
     for(int i=0;i<n;i++){
         identidad[i] = (double *)malloc(sizeof(double)*n);
